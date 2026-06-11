@@ -388,12 +388,12 @@ function IsolationSection() {
     {
       src: "https://www.image2url.com/r2/default/images/1781176048856-07d67e67-a101-4a5a-ab11-7122fe7613ee.jfif",
       alt: "Dondurulmuş Gıda Taşımacılığı -18 Derece",
-      title: "Derin Dondurucu (-18) Çözümleri"
+      title: "Arktik Isı İzolasyon Çözümleri"
     },
     {
       src: "https://www.image2url.com/r2/default/images/1781176014244-f64ac07c-0baa-4d2c-97a2-019e5b6e9992.png",
       alt: "Gensa Frigo Özel Panel Üretimi",
-      title: "Özel Tasarım Paneller"
+      title: "Hassas Panel Mühendisliği"
     },
     {
       src: "https://www.image2url.com/r2/default/images/1781175899794-d719e6a7-ff2a-44d8-aa3f-9f31c324e1df.jfif",
@@ -453,9 +453,9 @@ function IsolationSection() {
                 alt={images[0].alt} 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 via-brand-950/20 to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-500 flex flex-col justify-end p-8">
-                <span className="text-brand-400 font-bold text-xs tracking-widest uppercase mb-2">Sektörel Liderlik</span>
-                <span className="text-white font-extrabold text-xl tracking-tight">{images[0].title}</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 via-brand-950/20 to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500 flex flex-col justify-end p-8">
+                <span className="text-brand-400 font-bold text-xs tracking-widest uppercase mb-2 opacity-10">Sektörel Liderlik</span>
+                <span className="text-white font-extrabold text-xl tracking-tight opacity-10">{images[0].title}</span>
               </div>
             </div>
             <div className="overflow-hidden rounded-2xl h-[190px] shadow-xl">
@@ -560,8 +560,8 @@ function IsolationSection() {
                       className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 relative group cursor-pointer"
                     >
                       <img src={img.src} alt={img.alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-0 group-hover:opacity-50 transition-all duration-500 flex flex-col justify-end p-6">
-                        <span className="text-white text-xs font-black tracking-[0.1em] uppercase leading-tight transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{img.title}</span>
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-0 group-hover:opacity-20 transition-all duration-500 flex flex-col justify-end p-6">
+                        <span className="text-white text-xs font-black tracking-[0.1em] uppercase leading-tight transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-10">{img.title}</span>
                       </div>
                       {/* Hidden SEO Keywords */}
                       <span className="sr-only">
