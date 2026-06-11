@@ -407,6 +407,15 @@ function IsolationSection() {
     }
   ];
 
+  const coreServices = [
+    "FRİGO SOĞUTUCULARI",
+    "FRİGO İZOLASYONLARI",
+    "FRİGO KASA",
+    "SOĞUTUCU BAKIM ONARIM",
+    "POLYESTER KASA",
+    "ET KANCALARI"
+  ];
+
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -419,19 +428,38 @@ function IsolationSection() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 text-brand-700 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 border border-brand-100 shadow-sm">
               <ShieldCheck className="w-3.5 h-3.5" />
-              ÜSTÜN MÜHENDİSLİK & İZOLASYON
+              KOMPLE ÇÖZÜM MERKEZİ: PANELVAN & KASA
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tight">
-              Kusursuz İzolasyon, Kesintisiz Soğutma: <span className="text-brand-600">Gensa Frigo Panel Teknolojisi</span>
+              Kusursuz İzolasyon, <span className="text-brand-600">Profesyonel Frigorifik Kasa Çözümleri</span>
             </h2>
             <p className="text-slate-600 text-lg leading-relaxed mb-8 font-medium">
-              Lojistik sektöründe doğru soğutma kadar, soğuk havayı araç içinde muhafaza edebilmek de hayati önem taşır. Gensa Frigo olarak, ticari araçların iç hacmini en verimli şekilde koruyan, yüksek mühendislik ürünü izolasyon çözümleri sunuyoruz. İstanbul’daki 1200 m²’lik modern tesisimizde, panelvanlardan büyük kasalı araçlara kadar geniş bir yelpazede, aracın orijinal yapısını bozmadan profesyonel yalıtım uyguluyoruz.
+              Gensa Frigo olarak sadece panelvan araçlarınızı izole etmekle kalmıyor; her segmentteki ticari aracınız için sıfırdan <strong>Frigorifik Kasa</strong> ve <strong>Polyester Kasa</strong> üretimi yapıyoruz. İstanbul’daki modern tesisimizde, aracınızın performansını ve taşıdığınız ürünün kalitesini koruyan, uluslararası standartlarda "İşe Hazır" anahtar teslim çözümler sunuyoruz.
             </p>
+
+            {/* Core Services Grid - Inspired by Old Website */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+              {coreServices.map((service, index) => (
+                <motion.div 
+                  key={index}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.05 }}
+                  className="flex items-center gap-3 group"
+                >
+                  <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white shadow-lg shadow-brand-600/20 group-hover:bg-brand-700 transition-colors">
+                    <CheckCircle2 className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-bold text-slate-700 tracking-wide">{service}</span>
+                </motion.div>
+              ))}
+            </div>
+
             <button 
               onClick={() => setIsOpen(!isOpen)}
               className="group inline-flex items-center gap-3 px-10 py-5 bg-brand-950 text-white rounded-full font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-brand-600 transition-all shadow-2xl shadow-brand-950/20 active:scale-95"
             >
-              {isOpen ? "BİLGİLERİ GİZLE" : "TEKNİK DETAYLARI İNCELE"}
+              {isOpen ? "BİLGİLERİ GİZLE" : "KASA & PANEL TEKNOLOJİSİ DETAYLARI"}
               <motion.div
                 animate={{ rotate: isOpen ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
@@ -454,15 +482,21 @@ function IsolationSection() {
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 via-brand-950/20 to-transparent opacity-0 group-hover:opacity-10 transition-opacity duration-500 flex flex-col justify-end p-8">
-                <span className="text-brand-400 font-bold text-xs tracking-widest uppercase mb-2 opacity-10">Sektörel Liderlik</span>
-                <span className="text-white font-extrabold text-xl tracking-tight opacity-10">{images[0].title}</span>
+                <span className="text-brand-400 font-bold text-xs tracking-widest uppercase mb-2 opacity-[0.05]">Sektörel Liderlik</span>
+                <span className="text-white font-extrabold text-xl tracking-tight opacity-[0.05]">{images[0].title}</span>
               </div>
             </div>
-            <div className="overflow-hidden rounded-2xl h-[190px] shadow-xl">
-              <img src={images[1].src} alt={images[1].alt} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+            <div className="overflow-hidden rounded-2xl h-[190px] shadow-xl relative group">
+              <img src={images[1].src} alt="Frigorifik Kasa Üretimi" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              <div className="absolute top-2 right-2 bg-brand-600 text-white p-1.5 rounded-lg shadow-lg">
+                <Package className="w-4 h-4" />
+              </div>
             </div>
-            <div className="overflow-hidden rounded-2xl h-[190px] shadow-xl">
-              <img src={images[2].src} alt={images[2].alt} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+            <div className="overflow-hidden rounded-2xl h-[190px] shadow-xl relative group">
+              <img src={images[2].src} alt="Et Taşımacılığı ve Kanca Sistemleri" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              <div className="absolute top-2 right-2 bg-brand-600 text-white p-1.5 rounded-lg shadow-lg">
+                <Settings className="w-4 h-4" />
+              </div>
             </div>
           </motion.div>
         </div>
@@ -478,7 +512,7 @@ function IsolationSection() {
             >
               <div className="pt-12 border-t border-slate-100 mt-8">
                 <div className="text-center mb-16">
-                  <h3 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-4">Neden Gensa Frigo İzolasyonu?</h3>
+                  <h3 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-4">Neden Gensa Frigo İzolasyonu ve Kasası?</h3>
                   <div className="w-20 h-1.5 bg-brand-600 mx-auto rounded-full"></div>
                 </div>
                 
@@ -486,27 +520,27 @@ function IsolationSection() {
                   {[
                     {
                       title: "Yüksek Yoğunluklu Poliüretan Paneller",
-                      desc: "Isı transferini minimuma indiren, uluslararası standartlarda yüksek yoğunluklu poliüretan köpük ve fiberglas (CTP) paneller kullanıyoruz. Bu sayede dış ortam sıcaklığı ne olursa olsun, kasa içi iklimlendirme stabilitesini maksimumda tutuyoruz.",
+                      desc: "Kasalarda ve araç içi kaplamalarda ısı transferini minimuma indiren, uluslararası standartlarda yüksek yoğunluklu poliüretan köpük ve fiberglas (CTP) paneller kullanıyoruz.",
                       icon: <ThermometerSnowflake className="w-6 h-6" />
                     },
                     {
                       title: "Hafif, Dayanıklı ve Sağlık Standartlarına Uygun",
-                      desc: "Panellerimiz aracınıza ekstra yük bindirmez, yakıt tüketimini optimize etmenize yardımcı olur. Kolay temizlenebilir, antibakteriyel ve gıda taşımacılığı standartlarına (HACCP) tamamen uygun yüzey yapısıyla uzun ömürlü kullanım sunar.",
+                      desc: "Panellerimiz aracınıza ekstra yük bindirmez. Kolay temizlenebilir, antibakteriyel ve gıda taşımacılığı standartlarına (HACCP) tamamen uygun yüzey yapısına sahiptir.",
                       icon: <Leaf className="w-6 h-6" />
                     },
                     {
                       title: "Araç Orijinalliğini Koruyan Kusursuz İşçilik",
-                      desc: "Deneyimli teknik ekibimizle, aracın mekanik ve yapısal orijinalliğini koruyarak milimetrik işçilikle uygulama yapıyoruz. Panel birleşim noktalarında ısı köprülerini tamamen ortadan kaldıran sızdırmazlık teknolojisi uyguluyoruz.",
+                      desc: "Hem panelvan izolasyonunda hem de kasa montajında aracın yapısal orijinalliğini koruyarak milimetrik işçilikle uygulama yapıyoruz.",
                       icon: <Settings className="w-6 h-6" />
                     },
                     {
-                      title: "Geniş Araç Uyumluluğu",
-                      desc: "Çözümlerimiz sadece panelvan araçlarla sınırlı değildir. Şehir içi dağıtım yapan küçük ticari araçlardan, büyük lojistik operasyonlarda kullanılan kasalı kamyon ve kamyonetlere kadar her segmentteki araca özel izolasyon tasarımı ve uygulaması gerçekleştiriyoruz.",
+                      title: "Panelvan ve Kasalı Araç Uyumluluğu",
+                      desc: "Çözümlerimiz küçük ticari araçlardan, büyük lojistik operasyonlarda kullanılan kasalı kamyon ve kamyonetlere kadar her segmenti kapsar.",
                       icon: <Truck className="w-6 h-6" />
                     },
                     {
                       title: "Tek Çatı Altında, Anahtar Teslim Çözüm!",
-                      desc: "Aracınızın izolasyonu ve cihaz montajı için farklı servisler arasında zaman kaybetmeyin. Gensa Frigo güvencesiyle aracınızı fabrikamıza bırakın, izolasyonundan akıllı soğutucu montajına kadar tüm süreçleri tamamlanmış olarak, doğrudan 'işe hazır' teslim alın.",
+                      desc: "İzolasyon, montaj ve frigorifik kasa üretimi için farklı yerler gezmeyin. Gensa Frigo güvencesiyle aracınızı 'işe hazır' teslim alın.",
                       icon: <Zap className="w-6 h-6" />
                     }
                   ].map((item, idx) => (
@@ -535,7 +569,7 @@ function IsolationSection() {
                       <Globe className="w-32 h-32" />
                     </div>
                     <p className="text-brand-400 font-extrabold text-xs tracking-[0.3em] uppercase mb-4 relative z-10">İLETİŞİME GEÇİN</p>
-                    <h4 className="text-xl font-bold mb-8 leading-tight relative z-10">Filonuz için en uygun izolasyon çözümü ve fiyat teklifi almak için bizimle iletişime geçin.</h4>
+                    <h4 className="text-xl font-bold mb-8 leading-tight relative z-10">Filonuzun "Kasa & İzolasyon" ihtiyaçları için profesyonel teklif alın.</h4>
                     <button 
                        onClick={() => {
                          const el = document.getElementById('contact');
@@ -561,12 +595,12 @@ function IsolationSection() {
                     >
                       <img src={img.src} alt={img.alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                       <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-0 group-hover:opacity-20 transition-all duration-500 flex flex-col justify-end p-6">
-                        <span className="text-white text-xs font-black tracking-[0.1em] uppercase leading-tight transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-10">{img.title}</span>
+                        <span className="text-white text-xs font-black tracking-[0.1em] uppercase leading-tight transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 opacity-[0.03]">{img.title}</span>
                       </div>
                       {/* Hidden SEO Keywords */}
                       <span className="sr-only">
-                        kasap, et taşımacılığı, -18 derece dondurulmuş gıda, +4 derece taze gıda, sebze meyve lojistiği, 
-                        kasa izolasyonu, kayarperde, yalıtım kaplama, frigorifrik araç, panelvan yalıtım, İstanbul araç soğutma
+                        frigo kasa, polyester kasa üretim, kasap araç yalıtımı, et taşımacılığı kanca, -18 derece dondurulmuş gıda, 
+                        +4 derece taze gıda, sebze meyve lojistiği, kasa izolasyonu, yalıtım kaplama, frigorifrik araç, panelvan yalıtım
                       </span>
                     </motion.div>
                   ))}
