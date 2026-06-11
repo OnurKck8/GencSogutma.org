@@ -366,43 +366,43 @@ function IsolationSection() {
 
   const images = [
     {
-      src: "/src/assets/images/Sol1.png",
+      src: "https://www.image2url.com/r2/default/images/1781175679439-60d1b273-dddb-469b-9d4f-0652f167f8c7.jfif",
       alt: "Panelvan Araç İzolasyon Uygulaması",
       title: "Profesyonel Panelvan Kaplama"
     },
     {
-      src: "/src/assets/images/Sağ1.png",
+      src: "https://www.image2url.com/r2/default/images/1781176172311-f48b5500-ca41-4292-8d4b-f01e287ac660.jfif",
       alt: "Frigorifik Kasa Üretimi",
       title: "Yüksek Verimli Soğutucu Kasa"
     },
     {
-      src: "/src/assets/images/Sağ2.png",
+      src: "https://www.image2url.com/r2/default/images/1781176359608-1865b92c-1e07-4b90-9445-970e0f21b898.jfif",
       alt: "Et ve Kasap Taşımacılığı Uygun İzolasyon",
       title: "Hiyjenik Et Taşımacılığı"
     },
     {
-      src: "/src/assets/images/Sağ2_1.png",
+      src: "https://www.image2url.com/r2/default/images/1781176074496-6ce0cb0e-a946-4b1e-a1e8-4ea6fc661c5f.png",
       alt: "Sebze ve Meyve Lojistiği İçin Taze Gıda Çözümleri",
       title: "Taze Gıda (+4 Derece) Koruması"
     },
     {
-      src: "/src/assets/images/Sağ2_2.png",
+      src: "https://www.image2url.com/r2/default/images/1781176048856-07d67e67-a101-4a5a-ab11-7122fe7613ee.jfif",
       alt: "Dondurulmuş Gıda Taşımacılığı -18 Derece",
       title: "Derin Dondurucu (-18) Çözümleri"
     },
     {
-      src: "/src/assets/images/567d8946-3399-4c9f-8596-39283f12ded7.png",
+      src: "https://www.image2url.com/r2/default/images/1781176014244-f64ac07c-0baa-4d2c-97a2-019e5b6e9992.png",
       alt: "Gensa Frigo Özel Panel Üretimi",
       title: "Özel Tasarım Paneller"
     },
     {
-      src: "/src/assets/images/47e98883-de0b-47b4-919b-c8b1541896a8.png",
+      src: "https://www.image2url.com/r2/default/images/1781175899794-d719e6a7-ff2a-44d8-aa3f-9f31c324e1df.jfif",
       alt: "Lojistik Araç İzolasyonu İstanbul",
       title: "Modern Üretim Tesisi"
     },
     {
-      src: "/src/assets/images/Sağ-4_1.png",
-      alt: "HACCP Sertifikalı Frigorifrik İzolasyon",
+      src: "https://www.image2url.com/r2/default/images/1781175847037-e6e03ce9-80b4-4b31-88ec-6ba048aa562d.jfif",
+      alt: "Doblo için Frigorifrik İzolasyon",
       title: "Sertifikalı Güvence"
     }
   ];
@@ -449,20 +449,20 @@ function IsolationSection() {
           >
             <div className="col-span-2 row-span-2 overflow-hidden rounded-3xl h-[400px] shadow-2xl relative group">
               <img 
-                src="/src/assets/images/Sol1.png" 
-                alt="Gensa Frigo Profesyonel İzolasyon - Kasap ve Et Taşımacılığı" 
+                src={images[0].src} 
+                alt={images[0].alt} 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 via-brand-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 via-brand-950/20 to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-500 flex flex-col justify-end p-8">
                 <span className="text-brand-400 font-bold text-xs tracking-widest uppercase mb-2">Sektörel Liderlik</span>
-                <span className="text-white font-extrabold text-xl tracking-tight">Vip İzolasyon İşçiliği</span>
+                <span className="text-white font-extrabold text-xl tracking-tight">{images[0].title}</span>
               </div>
             </div>
             <div className="overflow-hidden rounded-2xl h-[190px] shadow-xl">
-              <img src="/src/assets/images/Sağ1.png" alt="Sebze Meyve Lojistiği" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              <img src={images[1].src} alt={images[1].alt} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
             </div>
             <div className="overflow-hidden rounded-2xl h-[190px] shadow-xl">
-              <img src="/src/assets/images/Sağ2.png" alt="Et Taşımacılığı" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              <img src={images[2].src} alt={images[2].alt} className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
             </div>
           </motion.div>
         </div>
@@ -560,7 +560,7 @@ function IsolationSection() {
                       className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 relative group cursor-pointer"
                     >
                       <img src={img.src} alt={img.alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-all duration-500 flex flex-col justify-end p-6">
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-0 group-hover:opacity-50 transition-all duration-500 flex flex-col justify-end p-6">
                         <span className="text-white text-xs font-black tracking-[0.1em] uppercase leading-tight transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{img.title}</span>
                       </div>
                       {/* Hidden SEO Keywords */}
