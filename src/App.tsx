@@ -366,24 +366,44 @@ function IsolationSection() {
 
   const images = [
     {
-      src: "/src/assets/images/1.png",
-      alt: "Kasa İzolasyonu ve Panelvan Kaplama Uygulaması",
-      title: "Gensa Frigo İzolasyon İşçiliği"
+      src: "/src/assets/images/Sol1.png",
+      alt: "Panelvan Araç İzolasyon Uygulaması",
+      title: "Profesyonel Panelvan Kaplama"
     },
     {
-      src: "/src/assets/images/11.png",
-      alt: "Frigorifik Kasa Panel Teknolojisi ve CTP Kaplama",
-      title: "Yüksek Yoğunluklu Panel Detayı"
+      src: "/src/assets/images/Sağ1.png",
+      alt: "Frigorifik Kasa Üretimi",
+      title: "Yüksek Verimli Soğutucu Kasa"
     },
     {
-      src: "/src/assets/images/12.png",
-      alt: "HACCP Uyumlu Araç İçi İzolasyon ve Hijyenik Kaplama",
-      title: "Hijyenik Taşıma Alanı"
+      src: "/src/assets/images/Sağ2.png",
+      alt: "Et ve Kasap Taşımacılığı Uygun İzolasyon",
+      title: "Hiyjenik Et Taşımacılığı"
     },
     {
-      src: "/src/assets/images/13.png",
-      alt: "Kayarperde ve Frigo Kasa Araç Filosu",
-      title: "Geniş Araç Uyumluluğu"
+      src: "/src/assets/images/Sağ2_1.png",
+      alt: "Sebze ve Meyve Lojistiği İçin Taze Gıda Çözümleri",
+      title: "Taze Gıda (+4 Derece) Koruması"
+    },
+    {
+      src: "/src/assets/images/Sağ2_2.png",
+      alt: "Dondurulmuş Gıda Taşımacılığı -18 Derece",
+      title: "Derin Dondurucu (-18) Çözümleri"
+    },
+    {
+      src: "/src/assets/images/567d8946-3399-4c9f-8596-39283f12ded7.png",
+      alt: "Gensa Frigo Özel Panel Üretimi",
+      title: "Özel Tasarım Paneller"
+    },
+    {
+      src: "/src/assets/images/47e98883-de0b-47b4-919b-c8b1541896a8.png",
+      alt: "Lojistik Araç İzolasyonu İstanbul",
+      title: "Modern Üretim Tesisi"
+    },
+    {
+      src: "/src/assets/images/Sağ-4_1.png",
+      alt: "HACCP Sertifikalı Frigorifrik İzolasyon",
+      title: "Sertifikalı Güvence"
     }
   ];
 
@@ -397,21 +417,21 @@ function IsolationSection() {
             viewport={{ once: true }}
             className="lg:w-1/2"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 text-brand-700 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 border border-brand-100">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 text-brand-700 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6 border border-brand-100 shadow-sm">
               <ShieldCheck className="w-3.5 h-3.5" />
-              PANEL VE İZOLASYON TEKNOLOJİSİ
+              ÜSTÜN MÜHENDİSLİK & İZOLASYON
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tight">
               Kusursuz İzolasyon, Kesintisiz Soğutma: <span className="text-brand-600">Gensa Frigo Panel Teknolojisi</span>
             </h2>
-            <p className="text-slate-600 text-lg leading-relaxed mb-8">
+            <p className="text-slate-600 text-lg leading-relaxed mb-8 font-medium">
               Lojistik sektöründe doğru soğutma kadar, soğuk havayı araç içinde muhafaza edebilmek de hayati önem taşır. Gensa Frigo olarak, ticari araçların iç hacmini en verimli şekilde koruyan, yüksek mühendislik ürünü izolasyon çözümleri sunuyoruz. İstanbul’daki 1200 m²’lik modern tesisimizde, panelvanlardan büyük kasalı araçlara kadar geniş bir yelpazede, aracın orijinal yapısını bozmadan profesyonel yalıtım uyguluyoruz.
             </p>
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-slate-900 text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-brand-600 transition-all shadow-xl shadow-slate-200"
+              className="group inline-flex items-center gap-3 px-10 py-5 bg-brand-950 text-white rounded-full font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-brand-600 transition-all shadow-2xl shadow-brand-950/20 active:scale-95"
             >
-              {isOpen ? "BİLGİLERİ GİZLE" : "DETAYLI BİLGİ İÇİN TIKLAYIN"}
+              {isOpen ? "BİLGİLERİ GİZLE" : "TEKNİK DETAYLARI İNCELE"}
               <motion.div
                 animate={{ rotate: isOpen ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
@@ -425,25 +445,24 @@ function IsolationSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-4"
+            className="lg:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-3"
           >
-            <div className="sm:col-span-2 overflow-hidden rounded-3xl h-[300px] sm:h-[420px] shadow-2xl relative group">
+            <div className="col-span-2 row-span-2 overflow-hidden rounded-3xl h-[400px] shadow-2xl relative group">
               <img 
-                src="/src/assets/images/1.png" 
-                alt="Gensa Frigo Profesyonel İzolasyon" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                src="/src/assets/images/Sol1.png" 
+                alt="Gensa Frigo Profesyonel İzolasyon - Kasap ve Et Taşımacılığı" 
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <span className="text-white font-bold text-sm tracking-wider uppercase">Fabrika Çıkışlı İzolasyon Kalitesi</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 via-brand-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                <span className="text-brand-400 font-bold text-xs tracking-widest uppercase mb-2">Sektörel Liderlik</span>
+                <span className="text-white font-extrabold text-xl tracking-tight">Vip İzolasyon İşçiliği</span>
               </div>
             </div>
-            <div className="flex flex-row sm:flex-col gap-4">
-              <div className="flex-1 overflow-hidden rounded-2xl h-[140px] sm:h-auto shadow-lg">
-                <img src="/src/assets/images/11.png" alt="CTP Panel" className="w-full h-full object-cover" />
-              </div>
-              <div className="flex-1 overflow-hidden rounded-2xl h-[140px] sm:h-auto shadow-lg">
-                <img src="/src/assets/images/12.png" alt="Hijyen Standartları" className="w-full h-full object-cover" />
-              </div>
+            <div className="overflow-hidden rounded-2xl h-[190px] shadow-xl">
+              <img src="/src/assets/images/Sağ1.png" alt="Sebze Meyve Lojistiği" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+            </div>
+            <div className="overflow-hidden rounded-2xl h-[190px] shadow-xl">
+              <img src="/src/assets/images/Sağ2.png" alt="Et Taşımacılığı" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
             </div>
           </motion.div>
         </div>
@@ -454,11 +473,14 @@ function IsolationSection() {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="overflow-hidden"
             >
-              <div className="pt-8 border-t border-slate-100 mt-8">
-                <h3 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-10 text-center">Neden Gensa Frigo İzolasyonu?</h3>
+              <div className="pt-12 border-t border-slate-100 mt-8">
+                <div className="text-center mb-16">
+                  <h3 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-4">Neden Gensa Frigo İzolasyonu?</h3>
+                  <div className="w-20 h-1.5 bg-brand-600 mx-auto rounded-full"></div>
+                </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                   {[
@@ -488,44 +510,64 @@ function IsolationSection() {
                       icon: <Zap className="w-6 h-6" />
                     }
                   ].map((item, idx) => (
-                    <div key={idx} className="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-300 transition-colors group">
-                      <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-600 mb-4 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                    <motion.div 
+                      key={idx} 
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: idx * 0.1 }}
+                      className="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-brand-300 hover:bg-white hover:shadow-2xl hover:shadow-brand-900/5 transition-all duration-300 group"
+                    >
+                      <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-brand-600 mb-6 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-all duration-500 transform group-hover:rotate-6">
                         {item.icon}
                       </div>
-                      <h4 className="font-bold text-slate-900 mb-3">{item.title}</h4>
-                      <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
-                    </div>
+                      <h4 className="font-extrabold text-slate-900 mb-4 text-lg">{item.title}</h4>
+                      <p className="text-sm text-slate-500 leading-relaxed font-medium">{item.desc}</p>
+                    </motion.div>
                   ))}
                   
-                  <div className="p-8 rounded-2xl bg-brand-950 text-white flex flex-col justify-center items-center text-center">
-                    <p className="text-brand-300 font-bold mb-4">HAZIR MISINIZ?</p>
-                    <h4 className="text-xl font-bold mb-6">Filonuz için en uygun izolasyon çözümü ve fiyat teklifi almak için bizimle iletişime geçin.</h4>
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="p-8 rounded-3xl bg-brand-950 text-white flex flex-col justify-center items-center text-center shadow-2xl relative overflow-hidden group"
+                  >
+                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-150 transition-transform duration-1000">
+                      <Globe className="w-32 h-32" />
+                    </div>
+                    <p className="text-brand-400 font-extrabold text-xs tracking-[0.3em] uppercase mb-4 relative z-10">İLETİŞİME GEÇİN</p>
+                    <h4 className="text-xl font-bold mb-8 leading-tight relative z-10">Filonuz için en uygun izolasyon çözümü ve fiyat teklifi almak için bizimle iletişime geçin.</h4>
                     <button 
                        onClick={() => {
                          const el = document.getElementById('contact');
                          if (el) el.scrollIntoView({ behavior: 'smooth' });
                        }}
-                       className="px-6 py-3 bg-white text-brand-950 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-brand-50 transition-colors"
+                       className="px-8 py-4 bg-white text-brand-950 rounded-full font-bold text-[10px] uppercase tracking-widest hover:bg-brand-500 hover:text-white transition-all duration-300 relative z-10 active:scale-95"
                     >
-                      TEKLİF ALIN
+                      HEMEN TEKLİF ALIN
                     </button>
-                  </div>
+                  </motion.div>
                 </div>
 
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                   {images.map((img, idx) => (
                     <motion.div 
                       key={idx}
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ type: "spring", stiffness: 300 }}
-                      className="aspect-square rounded-3xl overflow-hidden shadow-lg border-2 border-white relative group"
+                      whileHover={{ 
+                        scale: 1.05,
+                        rotate: idx % 2 === 0 ? 1 : -1
+                      }}
+                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-xl border border-slate-100 relative group cursor-pointer"
                     >
-                      <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-brand-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
-                        <span className="text-white text-[10px] font-bold tracking-tight uppercase leading-snug">{img.title}</span>
+                      <img src={img.src} alt={img.alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-all duration-500 flex flex-col justify-end p-6">
+                        <span className="text-white text-xs font-black tracking-[0.1em] uppercase leading-tight transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{img.title}</span>
                       </div>
                       {/* Hidden SEO Keywords */}
-                      <span className="sr-only">kasa, kayarperde, izolasyon, kaplama, frigorifrik, panelvan kaplama, araç yalıtımı</span>
+                      <span className="sr-only">
+                        kasap, et taşımacılığı, -18 derece dondurulmuş gıda, +4 derece taze gıda, sebze meyve lojistiği, 
+                        kasa izolasyonu, kayarperde, yalıtım kaplama, frigorifrik araç, panelvan yalıtım, İstanbul araç soğutma
+                      </span>
                     </motion.div>
                   ))}
                 </div>
