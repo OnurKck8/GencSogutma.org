@@ -404,6 +404,46 @@ function IsolationSection() {
       src: "https://www.image2url.com/r2/default/images/1781175847037-e6e03ce9-80b4-4b31-88ec-6ba048aa562d.jfif",
       alt: "Doblo için Frigorifrik İzolasyon",
       title: "Sertifikalı Güvence"
+    },
+    {
+      src: "https://www.image2url.com/r2/default/images/1781787909575-e82ed11b-74fb-4540-92ef-cf654369b45a.jfif",
+      alt: "Et Kancalı Kasa ve Modüler Askı Sistemleri",
+      title: "Et Kancalı Kasa Sistemleri"
+    },
+    {
+      src: "https://www.image2url.com/r2/default/images/1781788012361-e6f675c1-5bf2-4ca4-9f07-763e988bb37c.jfif",
+      alt: "Paslanmaz Çelik Araç Kaplama ve Hijyenik Yüzeyler",
+      title: "Paslanmaz Çelik Kaplama"
+    },
+    {
+      src: "https://www.image2url.com/r2/default/images/1781788033928-3af86c9a-be23-4843-a54e-fc5acedc4ced.jfif",
+      alt: "Et kancalı Sac ve Galvaniz Kaplama Uygulamaları",
+      title: "Sac Kaplama ve Güçlendirme"
+    },
+    {
+      src: "https://www.image2url.com/r2/default/images/1781176172311-f48b5500-ca41-4292-8d4b-f01e287ac660.jfif",
+      alt: "Alüminyum Çetalı Zemin Kaplama ve Yalıtım",
+      title: "Alüminyum Taban Kaplama"
+    },
+    {
+      src: "https://www.image2url.com/r2/default/images/1781788233565-49901a2d-0542-4d2a-bb33-52c2e90e00f8.jfif",
+      alt: "Panelvan Araç İçi Paslanmaz Kaplama",
+      title: "Panelvan Paslanmaz Çözümler"
+    },
+    {
+      src: "https://www.image2url.com/r2/default/images/1781788106340-2174f440-3128-4df8-9628-c1e27f73f9ea.jfif",
+      alt: "Laboratuvar ve Mutfak Tipi Araç İzolasyonu",
+      title: "Endüstriyel Kaplama"
+    },
+    {
+      src: "https://www.image2url.com/r2/default/images/1781788120328-628756e6-b038-4223-a50c-194c05b24dc5.jfif",
+      alt: "Gıda Güvenliği ve Hijyenik Araç Kaplama",
+      title: "Hiyjenik Taşıma Standartları"
+    },
+    {
+      src: "https://www.image2url.com/r2/default/images/1781788090343-ffbd1606-8e5f-4001-b259-50fc5ef11e3c.jfif",
+      alt: "Profesyonel Araç İzolasyon ve Kasa Tasarımı",
+      title: "Gensa Frigo Özel Uygulama"
     }
   ];
 
@@ -411,7 +451,7 @@ function IsolationSection() {
     "FRİGO SOĞUTUCULARI",
     "FRİGO İZOLASYONLARI",
     "FRİGO KASA",
-    "SOĞUTUCU BAKIM ONARIM",
+    "PASLANMAZ KAPLAMALI ARAÇLAR",
     "POLYESTER KASA",
     "ET KANCALARI"
   ];
@@ -599,8 +639,9 @@ function IsolationSection() {
                       </div>
                       {/* Hidden SEO Keywords */}
                       <span className="sr-only">
-                        frigo kasa, polyester kasa üretim, kasap araç yalıtımı, et taşımacılığı kanca, -18 derece dondurulmuş gıda, 
-                        +4 derece taze gıda, sebze meyve lojistiği, kasa izolasyonu, yalıtım kaplama, frigorifrik araç, panelvan yalıtım
+                        frigo kasa, polyester kasa üretim, kasap araç yalıtımı, et taşımacılığı kanca, paslanmaz kaplamalı araçlar,
+                        -18 derece dondurulmuş gıda, sac kaplama, alüminyum taban, +4 derece taze gıda, sebze meyve lojistiği, 
+                        kasa izolasyonu, yalıtım kaplama, frigorifrik araç, panelvan yalıtım
                       </span>
                     </motion.div>
                   ))}
